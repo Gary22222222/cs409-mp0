@@ -799,3 +799,19 @@ footer a {
     font-size:9px
   }
 }
+
+/* Current research spans the project grid to keep the three-project layout balanced. */
+.current-project {
+  grid-column: 1 / -1;
+}
+.current-project h3 {
+  margin-top: 24px;
+}
+.ongoing-badge {
+  color: var(--green);
+  border: 1px solid #c9d4ba;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 10px;
+  white-space: nowrap;
+}
