@@ -1,39 +1,57 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MP 0</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jianghui Sun — MCS student at UIUC working on multimodal AI, accessible applications, and machine learning. Explore research, engineering experience, and projects.">
+  <meta name="theme-color" content="#173e35">
+  <title>Jianghui Sun | Multimodal AI & Machine Learning</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
-
 <body>
-
-  <div class="card">
-
-    <img src="assets/profile.jpg" alt="Jianghui Sun">
-
-    <h1>Jianghui Sun</h1>
-
-    <p class="email"> sun112@illinois.edu </p>
-
-    <a href="https://github.com/Gary22222222" target="_blank">
-      GitHub
-    </a>
-
-    <p>
-      I am a graduate student interested in artificial intelligence,
-      multimodal AI, large language models, and conversational agents.
-      I enjoy exploring how AI can be used to build useful and intelligent applications.
-    </p>
-
-  </div>
-  <script src="bundle.js" type="text/javascript"></script>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Jianghui Sun home">JS<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> MCS @ University of Illinois Urbana-Champaign</p>
+        <h1 id="hero-title">Jianghui Sun<span class="name-period">.</span></h1>
+        <p class="hero-heading">Building AI that understands<br class="desktop-break"> people, across modalities.</p>
+        <p class="hero-description">I work at the intersection of multimodal AI, machine learning, and accessible software. My experience spans emotion-aware agents, vision-language models, and real-world prediction systems.</p>
+        <div class="actions"><a class="button button-primary" href="mailto:sun112@illinois.edu">Get in touch <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="assets/Jianghui_Sun_CV.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a></div>
+        <a class="text-link github-link" href="https://github.com/Gary22222222" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+      <aside class="profile-panel" aria-label="Profile overview">
+        <div class="portrait-frame"><img src="assets/profile.jpg" alt="Portrait of Jianghui Sun" width="150" height="150"></div>
+        <p class="profile-caption">RESEARCH MEETS ENGINEERING</p>
+        <p class="profile-statement">From visual signals<br>to meaningful experiences.</p>
+        <div class="profile-details"><span>Based in</span><strong>Urbana, Illinois</strong><span>Currently</span><strong>Master of Computer Science</strong><span>Graduating</span><strong>Expected December 2027</strong></div>
+        <div class="panel-bottom"><span>Multimodal AI</span><span>Human-centered applications</span></div>
+      </aside>
+    </section>
+    <div class="highlights" aria-label="Selected highlights"><div><strong>~12%</strong><span>Lower RMSE vs. baseline RNN</span></div><div><strong>40k+</strong><span>Records used for air quality modeling</span></div><div><strong>BICS 2025</strong><span>EmoSound research presentation</span></div></div>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / EXPERIENCE</p><h2 id="experience-title">Research depth.<br>Engineering practice.</h2></div><p>Turning multimodal research and time-series data into working systems.</p></div>
+      <div class="timeline">
+        <article class="experience-row"><div class="experience-meta"><p class="date">NOV 2025 — JAN 2026</p><p>Xi’an Jiaotong-Liverpool University</p><span class="role-type">Research</span></div><div><h3>Research Assistant</h3><p class="work-title">Fine-grained emoji understanding · DINOv2 + Qwen-VL</p><ul><li>Built a multimodal framework for fine-grained emoji understanding and description generation.</li><li>Designed adapter-based alignment modules to map DINOv2 representations into Qwen-VL’s vision feature space.</li><li>Connected aligned features to the language decoder to describe subtle emoji facial expressions.</li></ul><div class="tags"><span>DINOv2</span><span>Qwen-VL</span><span>Vision-language alignment</span></div></div></article>
+        <article class="experience-row"><div class="experience-meta"><p class="date">SEP 2025 — NOV 2025</p><p>Xi’an Jiaotong-Liverpool University</p><span class="role-type">Research</span></div><div><h3>Research Assistant</h3><p class="work-title">EmoSound · Emotion-aware audio accompaniment</p><ul><li>Developed a multimodal AI agent that translates visual emoticons into emotion-aligned audio for visually impaired users.</li><li>Fine-tuned CLIP with a lightweight cross-attention soft prompt module for emotion recognition under low-resource conditions.</li><li>Integrated multimodal retrieval and agent-based audio generation, improving emotion alignment and usability in user studies.</li></ul><div class="tags"><span>CLIP</span><span>Soft prompt tuning</span><span>Multimodal agents</span></div></div></article>
+        <article class="experience-row"><div class="experience-meta"><p class="date">JUN 2024 — AUG 2024</p><p>RocKontrol Technology Group Co., Ltd.</p><span class="role-type">Industry</span></div><div><h3>Machine Learning Algorithm Engineering Intern</h3><p class="work-title">Multi-horizon air quality forecasting</p><ul><li>Developed a prediction system using 40k+ records of air quality, carbon emissions, and meteorological data.</li><li>Compared RNN, LSTM, GRU, and Transformer models using 24-hour histories to predict PM2.5, O3, and AQI at 6-, 12-, and 24-hour horizons.</li><li>Optimized models in PyTorch with RMSE and MAE; LSTM reduced RMSE by approximately 12% versus the baseline RNN and delivered the most stable performance across horizons.</li></ul><div class="tags"><span>PyTorch</span><span>Time series</span><span>Transformers</span></div></div></article>
+      </div>
+    </section>
+    <section class="section" id="projects" aria-labelledby="projects-title"><div class="section-heading"><div><p class="eyebrow">02 / SELECTED PROJECTS</p><h2 id="projects-title">Built with a purpose.</h2></div><p>Accessible AI experiences and practical full-stack applications.</p></div>
+      <div class="project-grid">
+        <article class="project-card featured"><div class="project-top"><span class="project-category">MULTIMODAL AI / ACCESSIBILITY</span><span aria-hidden="true">01</span></div><div class="pipeline" aria-label="Image to retrieval to audio"><span>Image</span><span aria-hidden="true">→</span><span>Retrieval</span><span aria-hidden="true">→</span><span>Audio</span></div><h3>Cross-modal Audio Generation</h3><p class="project-subtitle">For visually impaired users in social chat</p><p>A production-oriented web application that generates emotion-aligned audio from user-uploaded images.</p><ul><li>Training-free multimodal RAG with a cross-modal knowledge graph and dual-vector databases.</li><li>Dual-path inference through image tags and descriptions, with Qwen-based aggregation for fine-grained emotional alignment.</li></ul><div class="tags"><span>Multimodal RAG</span><span>Qwen</span><span>Knowledge graphs</span></div><p class="project-date">JUN — SEP 2025</p></article>
+        <article class="project-card"><div class="project-top"><span class="project-category">FULL-STACK / WEB APPLICATION</span><span aria-hidden="true">02</span></div><div class="reading-visual" aria-hidden="true"><span></span><span></span><span></span><span class="book-rest"></span></div><h3>Daily Reading Tracker</h3><p class="project-subtitle">A place to track and manage reading</p><p>A deployed full-stack Java web application for organizing reading activities.</p><ul><li>Implemented the core reading-log module across both the front end and back end.</li><li>Contributed to the project’s technical documentation.</li></ul><div class="tags"><span>Java</span><span>Full-stack development</span></div><p class="project-date">MAR — JUN 2025</p></article>
+      </div>
+    </section>
+    <section class="section" id="research" aria-labelledby="research-title"><div class="section-heading"><div><p class="eyebrow">03 / PUBLICATION</p><h2 id="research-title">Understanding emotion.<br>Expanding access.</h2></div></div><article class="publication"><span class="publication-label">CONFERENCE RESEARCH</span><div><h3>EmoSound: A Multimodal AI Agent Framework for Emotion-Aware Audio Accompaniment of Emoticons</h3><p><strong>Sun, J.</strong>, et al.</p><p><cite>Advances in Brain-Inspired Cognitive Systems</cite>, Lecture Notes in Computer Science, Vol. 16568, Springer, 2026.</p><div class="publication-status"><span>Accepted · Forthcoming</span><span>Presented at BICS 2025</span></div></div></article></section>
+    <section class="section education-skills" aria-label="Education and technical skills"><div><p class="eyebrow">04 / EDUCATION</p><h2>Academic foundation.</h2><article class="education-card"><span class="school-mark">UIUC</span><h3>University of Illinois Urbana-Champaign</h3><p>Master of Computer Science</p><p class="muted">Aug 2026 — Expected Dec 2027 · Urbana, IL</p></article><article class="education-card"><span class="school-mark">XJTLU</span><h3>Xi’an Jiaotong-Liverpool University</h3><p>B.Sc. in Information and Computing Science</p><p class="muted">Sep 2022 — Jul 2026 · Suzhou, China</p><p class="gpa">GPA 3.8 / 4.0</p></article></div><div class="skills"><p class="eyebrow">05 / TECHNICAL SKILLS</p><h2>My toolkit.</h2><div class="skill-group"><h3>Languages</h3><div class="tags"><span>Python</span><span>Java</span><span>C++</span><span>JavaScript</span><span>SQL</span></div></div><div class="skill-group"><h3>AI & machine learning</h3><div class="tags"><span>PyTorch</span><span>Transformers</span><span>scikit-learn</span><span>Computer Vision</span><span>NLP</span><span>LoRA / PEFT</span><span>LLMs</span><span>RAG</span><span>LangChain</span></div></div><div class="skill-group"><h3>Backend & tools</h3><div class="tags"><span>FastAPI</span><span>Spring Boot</span><span>REST APIs</span><span>Docker</span><span>Git / GitHub</span><span>Jupyter</span><span>Postman</span><span>n8n</span></div></div></div></section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">LET’S CONNECT</p><h2 id="contact-title">Have an opportunity<br>in mind?</h2><p>Let’s talk about machine learning, multimodal AI,<br class="desktop-break"> and building useful software.</p></div><div class="contact-links"><a href="mailto:sun112@illinois.edu">sun112@illinois.edu <span aria-hidden="true">↗</span></a><a href="https://github.com/Gary22222222" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="assets/Jianghui_Sun_CV.pdf" download>Download résumé <span aria-hidden="true">↓</span></a></div></section>
+  </main>
+  <footer><p>© <span id="year">2026</span> Jianghui Sun</p><p>Urbana, Illinois <span aria-hidden="true">·</span> Made with curiosity.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="bundle.js" defer></script>
 </body>
-
 </html>
-
